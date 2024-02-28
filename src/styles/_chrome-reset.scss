@@ -1,0 +1,9 @@
+@use "@picocss/pico/scss/settings" as *;
+
+// Chrome injects font styles on body of side panel pages, which don't work with Pico styling them from :where(:root)
+// 1. override use of OS font stack with Pico's
+// 2. override 75% font size with Pico's
+body {
+    font-family: var(#{$css-var-prefix}font-family); // 1
+    font-size: var(#{$css-var-prefix}font-size); // 2
+}

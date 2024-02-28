@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "@picocss/pico/scss/settings" as *;
+
+/**
+ * Form Grid
+ */
+
+// Modify grid use in forms to work with spacings on form elements
+// 1. remove Pico Grid's row gap
+form .grid {
+    grid-row-gap: 0; // 1
+}

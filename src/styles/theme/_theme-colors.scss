@@ -1,0 +1,18 @@
+@use "sass:map";
+@use "@picocss/pico/scss/colors" as *;
+
+// Shared colors for backgrounds
+$primary: hsl(165, 100%, 40%); // Caribbean Green
+$primary-inverse: $black;
+// Light theme colors for text
+$light-primary: hsl(164, 100%, 23%); // Tropical Rain Forest
+// Dark theme colors for text
+$dark-primary: hsl(165, 100%, 57%); // Sea Green
+
+// Shared colors for background
+$secondary: hsl(190, 58%, 24%); // Dark Slate Gray
+$secondary-inverse: $white;
+// Light theme colors for text
+$light-secondary: hsl(190, 56%, 33%); // Teal Blue
+// Dark theme colors for text
+$dark-secondary: hsl(189, 55%, 65%); // Middle Blue

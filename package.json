@@ -1,0 +1,29 @@
+{
+    "name": "web-ext-sum-time",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "prettier --check . && eslint --ext .js,.vue .",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "@fontsource/lato": "^5.0.18",
+        "@picocss/pico": "^2.0.3",
+        "vue": "^3.4.20"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.262",
+        "@vitejs/plugin-vue": "^5.0.4",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-vue": "^9.22.0",
+        "prettier": "^3.2.5",
+        "sass": "^1.71.1",
+        "vite": "^5.1.4",
+        "vite-plugin-web-extension": "^4.1.1",
+        "webextension-polyfill": "^0.10.0"
+    }
+}

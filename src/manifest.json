@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Sum Time",
+    "description": "An extension to sum different units of time together",
+    "icons": {
+        "16": "icon/16.png",
+        "48": "icon/48.png",
+        "128": "icon/128.png"
+    },
+    "action": {
+        "default_title": "Sum Time"
+    },
+    "background": {
+        "service_worker": "src/background.js"
+    },
+    "options_page": "src/options.html",
+    "side_panel": {
+        "default_path": "src/side-panel.html"
+    },
+    "permissions": ["sidePanel", "storage"]
+}

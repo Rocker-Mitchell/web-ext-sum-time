@@ -1,0 +1,47 @@
+@use "@picocss/pico/scss/settings" as *;
+
+/**
+ * Alert ([role=alert])
+ */
+
+#{$parent-selector} [role="alert"] {
+    #{$css-var-prefix}border-color: var(#{$css-var-prefix}alert-border-color);
+    #{$css-var-prefix}background-color: var(
+        #{$css-var-prefix}alert-background-color
+    );
+    #{$css-var-prefix}color: var(#{$css-var-prefix}alert-color);
+    margin-bottom: var(#{$css-var-prefix}spacing);
+    padding: var(#{$css-var-prefix}form-element-spacing-vertical)
+        var(#{$css-var-prefix}form-element-spacing-horizontal);
+    border: var(#{$css-var-prefix}border-width) solid
+        var(#{$css-var-prefix}border-color);
+    border-radius: var(#{$css-var-prefix}border-radius);
+    background-color: var(#{$css-var-prefix}background-color);
+    box-shadow: var(#{$css-var-prefix}alert-box-shadow);
+    color: var(#{$css-var-prefix}color);
+}
+
+// Variants
+@if $enable-classes {
+    #{$parent-selector} :is([role="alert"]) {
+        &.success {
+            #{$css-var-prefix}border-color: var(
+                #{$css-var-prefix}alert-success-border-color
+            );
+            #{$css-var-prefix}background-color: var(
+                #{$css-var-prefix}alert-success-background-color
+            );
+            #{$css-var-prefix}color: var(#{$css-var-prefix}alert-success-color);
+        }
+
+        &.danger {
+            #{$css-var-prefix}border-color: var(
+                #{$css-var-prefix}alert-danger-border-color
+            );
+            #{$css-var-prefix}background-color: var(
+                #{$css-var-prefix}alert-danger-background-color
+            );
+            #{$css-var-prefix}color: var(#{$css-var-prefix}alert-danger-color);
+        }
+    }
+}

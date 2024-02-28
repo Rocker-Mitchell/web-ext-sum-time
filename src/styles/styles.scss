@@ -1,0 +1,35 @@
+@use "config" as config;
+@use "@picocss/pico/scss/pico" with (
+    $css-var-prefix: config.$css-var-prefix,
+    $enable-semantic-container: true,
+    $modules: (
+        "themes/default": false,
+        "layout/section": false,
+        "layout/overflow-auto": false,
+        "content/table": false,
+        "content/code": false,
+        "content/figure": false,
+        // using `hr`, styled in miscs
+        "content/miscs": true,
+        "forms/checkbox-radio-switch": false,
+        "forms/input-color": false,
+        "forms/input-date": false,
+        "forms/input-file": false,
+        "forms/input-range": false,
+        "forms/input-search": false,
+        "components/accordion": false,
+        "components/dropdown": false,
+        "components/loading": false,
+        "components/modal": false,
+        "components/progress": false,
+        "components/tooltip": false,
+    )
+);
+
+@use "chrome-reset";
+
+@use "theme";
+
+@use "layout/form-grid";
+@use "content/lucide";
+@use "components/alert";
